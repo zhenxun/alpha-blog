@@ -3,7 +3,9 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   
-  resource :articles
+  
+  #match "/articles/:id" => "articles#show"
+  resources :articles
   
   
   # The priority is based upon order of creation: first created -> highest priority.
