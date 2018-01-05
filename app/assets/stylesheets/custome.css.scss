@@ -1,3 +1,62 @@
+$navbar-default-bg: #fff;
+$color-black: #000;
+$color-white: #fff;
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+#logo{
+  color:$color-black;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  
+  &:hover{
+    text-decoration:none;
+    color:#808080;
+  }
+}
+
+.navbar-nav > li > a{
+  color:$color-black !important;
+  
+  &:hover{
+    color:#808080 !important;
+  }
+}
+
+.section-jumbotron{
+  padding: 2rem 5rem;
+  
+  &__container{
+    padding: 5rem 3rem;
+    border-radius:5px;
+    background-image: linear-gradient(to right bottom, rgba($color-black, .1), rgba($color-black, .5)), asset-url('dan-ritson-213689.jpg');
+    background-size:cover;
+    height:850px;
+    text-align:center;
+    
+    &-title{
+      color:rgba($color-black, 0.8);
+    }
+    
+    &-message{
+      color:rgba($color-black, 0.6);
+    }
+  }
+}
+
+.footer{
+   background-color: rgba(#00bfff, .3);
+   padding: 1rem 2rem;
+   font-size: 16px;
+  
+  & a{
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+  }
+  
+}
