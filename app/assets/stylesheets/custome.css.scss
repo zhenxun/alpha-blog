@@ -6,6 +6,32 @@ $color-white: #fff;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.bottom-link{
+  padding-bottom: 2rem;
+  
+  & a{
+    text-decoration: none;
+  }
+}
+
+
+.alert-messages{
+  margin-left: 3rem;
+  width:90%;
+  
+  &__list{
+    padding:0;
+  }
+  
+  &__list > li{
+    list-style: none;
+  }
+  
+  &__glyphicon{
+    color: red;
+  }
+}
+
 #logo{
   color:$color-black;
   font-size: 1.7em;
@@ -48,10 +74,45 @@ $color-white: #fff;
   }
 }
 
+.section-create-article{
+  
+  &__top-title{
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+}
+
+.section-edit-article{
+  
+  &__top-title{
+    margin-left: 3rem;
+    padding-bottom: 2rem;
+  }
+  
+}
+
+
+.section-show{
+  padding: 2rem 5rem;
+}
+
+
+.section-article-list{
+   padding: 2rem 5rem;
+  
+  &__top-title{
+    padding-bottom: 2rem;
+  }
+  
+}
+
 .footer{
-   background-color: rgba(#00bfff, .3);
-   padding: 1rem 2rem;
+   //background-color: rgba(#00bfff, .3);
+   background-color: $color-white;
+   padding: 1rem 5rem;
    font-size: 16px;
+   border-top: 1px solid rgba(#ccc,.6);
   
   & a{
     text-decoration:none;

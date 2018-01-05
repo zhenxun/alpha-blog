@@ -1,7 +1,11 @@
-<h1>Showing selected article</h1>
+<section class="section-show">
+  
+  <h1 class="section-show__top-title">Showing selected article</h1>
 
-<p>Title: <%= @article.title %></p>
-<p>Description: <%= @article.description %></p>
+  <p class="section-show__title">Title: <%= @article.title %></p>
+  <p class="section-show__description">Description: <%= @article.description %></p>
 
-<%= link_to "Back the list page", articles_path %> | 
-<%= link_to "Edit this article", edit_article_path(@article) %>
+  <%= link_to "Back the list page", articles_path %> | 
+  <%= link_to "Edit this article", edit_article_path(@article) %>
+
+</section>
