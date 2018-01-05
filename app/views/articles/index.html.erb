@@ -2,7 +2,9 @@
 <h1 class="section-article-list__top-title">Your Articles Listing</h1>
 
   <div class="col-sm-12 text-right">
-    <p><%= link_to "Create new article", new_article_path, class: "btn btn-info btn-sm"  %></p>
+    <p> 
+      <%= link_to '<span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Create new article'.html_safe, new_article_path, class: "btn btn-info btn-sm"%>
+    </p>
   </div>
   
 <table class="table">
@@ -17,7 +19,7 @@
     <tr>
       <td><%= index + 1   %></td>
       <td><%= article.title %></td>
-      <td><%= article.description %></td>
+      <td><%= truncate(article.description, length: 100) %></td>
       <td><%= link_to "Edit", edit_article_path(article)  %></td>
       <td><%= link_to "Show", article_path(article)  %></td>
       <td><%= link_to "Delete", article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
