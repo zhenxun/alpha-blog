@@ -1,6 +1,7 @@
 
 <% flash.each do |name, msg| %>
-  <div class="alert alert-success alert-messages" role="alert">
+  <div class='alert alert-<%= "#{name}" %> alert-messages' role="alert">
+      <a href="#" class="close" data-dismiss="alert">&#215;</a>
       <ul class="alert-messages__list">
         <li><%= msg %></li>
      </ul>

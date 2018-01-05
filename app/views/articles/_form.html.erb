@@ -1,13 +1,4 @@
-<% if @article.errors.any? %>
-  <div class="alert alert-warning alert-messages" role="alert">
-    <h3>The following errors prevented the article from getting created:</h3>
-    <ul class="alert-messages__list">
-    <% @article.errors.full_messages.each do |msg| %>
-      <li><span class="glyphicon glyphicon-remove alert-messages__glyphicon" aria-hidden="true"></span> <%= msg %></li>
-    <% end %>
-      </ul>
-  </div>
-<% end %>
+<%= render 'shared/errors', obj: @article %>
 
 <div class="row">
   <div class="col-md-12">
