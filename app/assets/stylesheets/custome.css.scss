@@ -95,6 +95,22 @@ $color-white: #fff;
 
 .section-show{
   padding: 2rem 5rem;
+  height: 85vh;
+  
+  &__description-area{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 3px;
+    font-size:16px;
+    margin-bottom: inherit;
+    
+  }
+  
+  &__article-action{
+    border-top: 1px solid #eaeaea;
+    padding-top:2rem;
+  }
+  
 }
 
 
