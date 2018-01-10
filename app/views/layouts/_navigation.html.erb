@@ -29,6 +29,8 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Your Pofile <%= "Admin" if current_user.admin? %> <span class="caret"></span></a>
             <ul class="dropdown-menu">
+                <li><%= link_to "New Category", new_category_path if current_user.admin?%></li>
+                <li><%= link_to "All Category", categories_path %></li>
                 <li><%= link_to "New Article", new_article_path %></li>
                 <li role="separator" class="divider"></li>
                 <li><%= link_to "Edit your profile", edit_user_path(current_user) %></li>
